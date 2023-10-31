@@ -1,0 +1,88 @@
+.modal-card {
+    background-color: var(--color-black-modal);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-card__content {
+    margin: 0 5px 0 5px;
+    padding: 15px 20px 20px 30px;
+    width: 600px;
+    background-color: var(--color-accent-background);
+    border-radius: 40px;
+    border: 5px solid var(--color-accent);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.modal-card__word {
+    font-size: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--color-accent-dark);
+    text-transform: uppercase;
+    font-family: var(--font-accent);
+}
+
+.modal-card__word-association {
+    font-size: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.modal-card__info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-card__author {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-accent-dark);
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.info-card__author:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 450px) {
+    .modal-card__content {
+        padding: 5px 0 0 15px;
+        gap: 10px;
+        font-size: 14px;
+        min-width: 300px;
+    }
+
+    .modal-card__word {
+        font-size: 24px;
+    }
+
+    .modal-card__word-association {
+        font-size: 14px;
+    }
+
+    .info-card__author {
+        font-size: 12px;
+    }
+}

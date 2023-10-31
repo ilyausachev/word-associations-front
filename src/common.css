@@ -1,3 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&display=swap');
+
 :root {
-    font-size: 30px;
+    --font-primary: "Roboto Mono", monospace;
+    --font-accent: 'Rubik', sans-serif;
+    --color-background: #FEFEFE;
+    --color-accent: #B345F7;
+    --color-black: #1e2027;
+    --color-black-modal: rgba(0, 0, 0, 0.6);
+    --color-grey: #8A8A8A;
+    --color-accent-dark: #42006C;
+    --color-accent-background: #FEF8FF;
+    --container-width: 1075px;
+}
+
+*:not(svg *) {
+    all: unset;
+    display: revert;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--color-black);
 }

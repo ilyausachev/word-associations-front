@@ -1,0 +1,94 @@
+.modal-create {
+    background-color: var(--color-black-modal);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-create__content {
+    margin: 0 5px 0 5px;
+    padding: 15px 20px 20px 30px;
+    width: 500px;
+    background-color: var(--color-accent-background);
+    border-radius: 40px;
+    border: 5px solid var(--color-accent);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.modal-create__title {
+    font-size: 24px;
+    color: var(--color-accent-dark);
+    font-family: var(--font-accent);
+}
+
+.modal-create__search-form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.modal-create__word-input {
+    padding: 13px 11px 10px;
+    width: 90%;
+    border-radius: 8px;
+    background-color: var(--color-accent-background);
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--color-black);
+    box-shadow: 0 0 2px 2px var(--color-accent-dark);
+}
+
+.modal-create__association-input {
+    all: revert;
+    resize: none;
+    padding: 13px 11px 10px;
+    border-radius: 8px;
+    width: 90%;
+    background-color: var(--color-accent-background);
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--color-black);
+    box-shadow: 0 0 2px 2px var(--color-accent-dark);
+}
+
+.modal-create__association-input:focus{
+    outline: 0;
+}
+
+.modal-create__button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-create__button {
+    color: #FEF8FF;
+    background-color: var(--color-accent);
+    border-radius: 8px;
+    padding: 7px;
+    margin-right: 25px;
+}
+
+.modal-create__button:hover {
+    box-shadow: 0 0 2px 2px var(--color-accent-dark);
+}
+
+@media (max-width: 450px) {
+    .modal-create__content {
+        padding: 5px 0 15px 15px;
+        gap: 10px;
+        font-size: 14px;
+        min-width: 300px;
+    }
+}
