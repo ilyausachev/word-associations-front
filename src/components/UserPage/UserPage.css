@@ -1,0 +1,22 @@
+.user-page {
+    max-width: var(--container-width);
+    margin: auto;
+}
+
+.user-page__title {
+    font-size: 28px;
+    color: var(--color-accent-dark);
+    font-family: var(--font-accent);
+    display: flex;
+    margin: 0 0 30px 20px;
+}
+
+.user-page__user {
+    text-transform: uppercase;
+}
+
+@media (max-width: 400px) {
+    .user-page__title {
+        font-size: 24px;
+    }
+}

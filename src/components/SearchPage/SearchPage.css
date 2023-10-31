@@ -1,0 +1,23 @@
+.search-page {
+    max-width: var(--container-width);
+    margin: auto;
+}
+
+.search-page__title {
+    font-size: 28px;
+    color: var(--color-accent-dark);
+    font-family: var(--font-accent);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px 20px;
+}
+
+.search-page__word {
+    text-transform: uppercase;
+}
+
+@media (max-width: 400px) {
+    .search-page__title {
+        font-size: 24px;
+    }
+}

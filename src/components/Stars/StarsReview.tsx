@@ -6,19 +6,6 @@ interface Props {
     size: number;
     rating: number;
 }
-const determineFillness = (x: number): fillness => {
-    let fill = fillness.empty;
-    if (x == 1) {
-        fill = fillness.quarter;
-    } else if (x == 2) {
-        fill = fillness.half;
-    } else if (x == 3) {
-        fill = fillness.treeQuarters;
-    } else if (x == 4) {
-        fill = fillness.full;
-    }
-    return fill;
-};
 const crateArrayFillness = (x: number): fillness[] => {
     const integer = Math.floor(x);
     const fraction = Math.round((x - Math.floor(x)) * 4);

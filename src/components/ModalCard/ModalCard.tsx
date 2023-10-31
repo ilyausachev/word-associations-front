@@ -18,7 +18,7 @@ export const ModalCard: FC<Props> = ({ isOpen, isLocal, onClose }) => {
     const [isDrop, setIsDrop] = useState(false);
     const [referenceElement, setReferenceElement] = useState<HTMLDivElement | null>(null);
     const [popperElement, setPopperElement] = useState<HTMLDivElement | null>(null);
-    const { styles, attributes } = usePopper(referenceElement, popperElement, {
+    const { styles } = usePopper(referenceElement, popperElement, {
         modifiers: [
             {
                 name: 'offset',

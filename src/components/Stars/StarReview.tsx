@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC } from 'react';
 import './Stars.css';
 import { fillness } from '../../utils';
 interface Props {

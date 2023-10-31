@@ -1,0 +1,18 @@
+.lk-page {
+    max-width: var(--container-width);
+    margin: auto;
+}
+
+.lk-page__title {
+    font-size: 28px;
+    color: var(--color-accent-dark);
+    font-family: var(--font-accent);
+    display: flex;
+    margin: 0 0 30px 20px;
+}
+
+@media (max-width: 400px) {
+    .lk-page__title {
+        font-size: 24px;
+    }
+}

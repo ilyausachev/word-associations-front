@@ -1,11 +1,10 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useState } from 'react';
 import { Star } from './Star';
 import { fillness } from '../../utils';
 
 interface Props {
     size: number;
 }
-const array = [1, 2, 3, 4, 5];
 export const Stars: FC<Props> = ({ size }) => {
     const [state, setState] = useState(0);
     const array = [1, 2, 3, 4, 5];

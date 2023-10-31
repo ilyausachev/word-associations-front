@@ -24,6 +24,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-popper": "^2.3.0",
+    "react-router-dom": "^6.18.0",
     "style-loader": "^3.3.3",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^9.0.5",
