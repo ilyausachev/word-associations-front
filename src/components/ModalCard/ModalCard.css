@@ -33,6 +33,18 @@
     font-family: var(--font-accent);
 }
 
+.modal-card__word-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-card__word-dots {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
 .modal-card__word-association {
     font-size: 24px;
     display: -webkit-box;
@@ -84,5 +96,13 @@
 
     .info-card__author {
         font-size: 12px;
+    }
+
+    .modal-card__word-dots{
+        margin-right: 15px;
+    }
+
+    .info-card__stars {
+        margin-right: 25px;
     }
 }

@@ -55,6 +55,16 @@
 
 .info__stars {
     margin-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.info__amount-stars {
+    color: var(--color-accent);
+    font-size: 12px;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
 }
 
 .card:hover {

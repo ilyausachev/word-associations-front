@@ -16,6 +16,7 @@ export const WordCard: FC<Props> = ({ onClick }) => {
                 <div className="card__info info">
                     <div className="info__author">defucnt</div>
                     <div className="info__stars">
+                        <div className="info__amount-stars">178 //</div>
                         <StarsReview size={24} rating={3.29} />
                     </div>
                 </div>
